@@ -1,0 +1,19 @@
+{
+  "name": "angular-mcq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddbadams/angular-mcq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddbadams/angular-mcq/issues"
+  },
+  "homepage": "https://github.com/toddbadams/angular-mcq#readme"
+}

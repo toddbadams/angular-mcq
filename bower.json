@@ -1,0 +1,20 @@
+{
+  "name": "WineTrivia",
+  "version": "0.1.0",
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "chai": "~3.4.2",
+    "sinon": "http://sinonjs.org/releases/sinon-1.17.4.js",
+    "sinon-chai": "https://raw.githubusercontent.com/domenic/sinon-chai/master/lib/sinon-chai.js",
+    "simple-test": "https://github.com/toddbadams/simple-test.git",
+    "angular-mocks": "^1.5.5",
+    "chance": "^1.0.3"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-material": "^1.0.8",
+    "angular-messages": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-animate": "^1.5.5"
+  }
+}

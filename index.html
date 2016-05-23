@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app="demo" lang="en">
+<!-- localhost:8013 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>MCQs</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100italic,100,300italic,300,400italic,400,500italic,500,700italic,700,900italic,900" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.8/angular-material.min.css" />
+</head>
+
+<body>
+    <mcq-knowledge-areas></mcq-knowledge-areas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-messages.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
+    <script src="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.5/angular-material.js"></script>
+
+    <script src="src/mcq.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/shuffle.js"></script>
+    <script src="src/viewModelFactory.js"></script>
+    <script src="src/questions.js"></script>
+
+    <script>
+
+        angular.module('demo', [ 'mcq', 'ngMaterial' ])
+            .config('demoConfig', config);
+
+        config.inject$ = ['mcqData']
+
+        function config(mcqData) {
+            mcqData.load('data/wset3.json');
+        }
+    </script>
+</body>
+
+</html>
